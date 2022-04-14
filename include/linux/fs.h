@@ -2764,6 +2764,7 @@ static inline ssize_t generic_write_sync(struct kiocb *iocb, ssize_t count)
 	return count;
 }
 
+extern void emergency_synchronous_sync(void);
 extern void emergency_sync(void);
 extern void emergency_remount(void);
 
